@@ -1,0 +1,57 @@
+.task_add_btn {
+    font-size: 18px;
+    max-width: 100%;
+    color: #fff;
+    background-color: #3e63dd;
+    height: 32px;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    transition: 0.2s;
+
+    &:hover {
+        background-color: #18379e;
+        cursor: pointer;
+    }
+}
+
+.select {
+    &_content {
+        width: 100%;
+        padding: 10px 14px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        background-color: #f9f9f9;
+        font-size: 15px;
+        color: #333;
+        outline: none;
+        transition: all 0.2s ease;
+        background-color: #fff;
+    
+        &:focus {
+            border-color: #4a90e2;
+        }
+    }
+    &_label{
+        color: #fff;
+    }
+}
+.usable{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.search_input{
+        width: 300px;
+        height: 40px;
+        border: 1px solid #DFE3E6;
+        border-radius: 4px;
+        padding: 10px;
+        transition: border-color 0.2s ease;
+
+        &:focus {
+            border: 1px solid rgb(62, 99, 221) !important;
+            outline: none;
+        }
+    }

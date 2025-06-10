@@ -1,0 +1,15 @@
+
+.label {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    &_item{
+        background-color: #fff;
+        padding: 20px;
+        &_content{
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+    }
+}

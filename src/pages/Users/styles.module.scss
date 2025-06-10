@@ -1,0 +1,59 @@
+.users {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.user {
+    background-color: #fff;
+    padding: 20px;
+
+    &_item {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    &_form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+
+        &_content {
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px;
+            border-radius: 6px;
+        }
+
+        &_input {
+            width: 500px;
+            height: 40px;
+            border: 1px solid #DFE3E6;
+            border-radius: 4px;
+            padding: 10px;
+            transition: border-color 0.2s ease;
+
+            &:focus {
+                border: 1px solid rgb(62, 99, 221) !important;
+                outline: none;
+            }
+        }
+
+        &_btn {
+            padding: 10px;
+            border: none;
+            width: 200px;
+            font-size: 16px;
+            border-radius: 6px;
+            background-color: #4a90e2;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}

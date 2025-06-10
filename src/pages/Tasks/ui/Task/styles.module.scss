@@ -1,0 +1,41 @@
+.task{
+    background-color: #fff;
+    top:100px;
+    border: 1px solid #DFE3E6;
+    position: fixed;
+    height: 100%;
+    width: 500px;
+}
+.close{
+    display: flex;
+    justify-content: end;
+    &_btn{
+        padding: 5px 10px;
+        font-size: 25px;
+        &:hover{
+            background-color: #a59a9a;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+    }
+}
+.label{
+    color: white;
+    display: flex;
+    gap: 20px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+.cart{
+    &_image{
+        width: 44px;
+        height: 44px;
+        padding: 10px;
+        &:hover{
+            background-color: #a59a9a;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+    }
+}
