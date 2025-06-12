@@ -1,11 +1,11 @@
-import labelStore from "./label.store";
-import tasksStore from "./tasks.store";
-import usersStore from "./users.store";
+import labelStore, { type ILabelStore } from "./label.store";
+import tasksStore, { type ITaskStore } from "./tasks.store";
+import usersStore, { type IUsersStore } from "./users.store";
 
 class RootStore {
-    labelStore: typeof labelStore | null = labelStore;
-    usersStore: typeof usersStore | null = usersStore;
-    tasksStore: typeof tasksStore | null = tasksStore;
+    labelStore: ILabelStore = labelStore;
+    usersStore: IUsersStore = usersStore;
+    tasksStore: ITaskStore = tasksStore;
 }
 
 export type IRootStore = typeof RootStore.prototype;

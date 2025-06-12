@@ -5,7 +5,6 @@ import { useStores } from "../../../context/RootStoreContext.ts"
 import styles from './styles.module.scss'
 import { AsyncRenderer } from "../../../components/AsyncRenderer/AsyncRenderer.tsx";
 import type { ILabel } from "../../../types/types.ts";
-import { ListRenderer } from "../../../components/ListRenderer/ListRenderer.tsx";
 
 
 export const CreateTaskPage = observer(() => {
@@ -32,7 +31,7 @@ export const CreateTaskPage = observer(() => {
 
   const handleAddTaskModal = () => setIsAddTaskModalOpen(true)
 
-   const handleSetQuery = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleSetQuery = (e: React.ChangeEvent<HTMLInputElement>) => {
     const query = e.target.value;
     searchTasks(query);
   };
@@ -56,10 +55,10 @@ export const CreateTaskPage = observer(() => {
               value={labels}
               fulfilled={(labels) => (
                 labels.map((label) => (
-              <option key={label.id} value={label.id}>
-                {label.caption}
-              </option>
-            )),
+                  <option key={label.id} value={label.id}>
+                    {label.caption}
+                  </option>
+                ))
               )}
             />
           </select>

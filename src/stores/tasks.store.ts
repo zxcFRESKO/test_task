@@ -3,6 +3,7 @@ import { addTaskLabelApi, createTaskApi, getAllTasksApi, getTasksByLabelApi, rem
 import { fromPromise, type IPromiseBasedObservable } from "mobx-utils";
 import type { ITask } from "../types/types";
 
+
 class TasksStore {
   tasks?: IPromiseBasedObservable<ITask[]>
   selectedTask!: IPromiseBasedObservable<ITask | null>;

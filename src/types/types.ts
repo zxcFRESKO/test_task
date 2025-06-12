@@ -1,13 +1,17 @@
-import type { ILabelStore } from "../stores/label.store";
+import type { ILabelStore } from '../stores/label.store';
+import type { ITaskStore } from '../stores/tasks.store'
+import type { IUsersStore } from '../stores/users.store';
+
 
 export interface ILabel {
     id: number;
     color: string;
     caption: string;
 }
-
 export interface IRootStore {
-    labelStore: ILabelStore;
+  tasksStore: ITaskStore;
+  labelStore: ILabelStore;
+  usersStore: IUsersStore;
 }
 
 export interface IListRenderer<T> {
