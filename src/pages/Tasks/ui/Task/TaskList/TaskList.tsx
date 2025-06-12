@@ -8,7 +8,7 @@ import { AsyncRenderer } from "../../../../../components/AsyncRenderer/AsyncRend
 import { Task } from "../Task"
 
 export const TaskList = observer(() => {
-    const { tasksStore: { tasks, getAllTasks, tasksByLabel } } = useStores();
+    const { tasksStore: { tasks, getAllTasks } } = useStores();
     const [selectedTaskId, setSelectedTaskId] = useState<number | null>(null);
 
     useEffect(() => {
